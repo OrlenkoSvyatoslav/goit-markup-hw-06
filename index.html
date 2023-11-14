@@ -39,16 +39,22 @@
             </li>
           </ul>
         </nav>
+        <button class="mobile-open-btn" type="button">
+          <svg class="mobile-open-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
         <address id="Contacts" class="contacts">
-          <ul class="contacts-item">
-            <li class="contacts-item-list">
+          <ul class="contacts-list">
+            <li class="contacts-list-item">
               <a
                 class="contacts-item-link menu-link"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="contacts-item-list">
+            <li class="contacts-list-item">
               <a class="contacts-item-link menu-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -60,16 +66,16 @@
     <main>
       <!-- HERO Section  1 section -->
 
-      <section class="hero background-img">
+      <!-- <section class="hero background-img">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="order-btn" type="button">Order Service</button>
         </div>
-      </section>
+      </section> -->
 
       <!-- OUR BENEFITS  2 section  -->
 
-      <section id="Studio" class="benefits">
+      <!-- <section id="Studio" class="benefits">
         <div class="container">
           <h2 class="benefits-title visually-hidden">Our benefits</h2>
           <ul class="benefits-icon-list">
@@ -133,11 +139,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Team Dream  3 section -->
 
-      <section class="team-dream">
+      <!-- <section class="team-dream">
         <div class="container">
           <h2 class="team-dream-title">Our Team</h2>
           <ul class="team-dream-item">
@@ -311,11 +317,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Portfolio 4 section -->
 
-      <section class="portfolio">
+      <!-- <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-item">
@@ -441,10 +447,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Footer SECTION -->
-    <footer class="team-dream-footer">
+    <!-- <footer class="team-dream-footer">
       <div class="container footer-item">
         <div class="footer-info">
           <a class="logotype-footer link-footer" href="./index.html"
@@ -510,10 +516,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!--  SECTION OVERLAY -->
-
+    <!-- 
     <div class="overlay-backdrop is-open">
       <div class="form-modal">
         <button class="close" type="button">
@@ -587,6 +593,86 @@
             </label>
           </div>
           <button class="send-btn" type="button">Send</button>
+        </form>
+      </div>
+    </div> -->
+
+    <!-- MOBILE MENU BURGER -->
+
+    <div class="mobile-burger-menu is-open">
+      <div class="container mobile-burger-conteiner">
+        <form>
+          <div class="mobile-close-button">
+            <button class="close-burger" type="button">
+              <svg class="close-burger-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-form"></use>
+              </svg>
+            </button>
+            <nav class="burger-nav">
+              <ul class="burger-list">
+                <li class="menu-burger-list-item">
+                  <a class="burger-links active-burger" href="">Contacts</a>
+                </li>
+                <li class="menu-burger-list-item">
+                  <a class="burger-links" href="">Portfolio</a>
+                </li>
+                <li class="menu-burger-list-item">
+                  <a class="burger-links" href="">Studio</a>
+                </li>
+              </ul>
+            </nav>
+
+            <address id="Contacts" class="contacts-burger">
+              <ul class="contacts-burger-list">
+                <li class="contacts-burger-list-item">
+                  <a
+                    class="contacts-burger-item-link menu-link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts-burger-list-item">
+                  <a
+                    class="contacts-burger-item-link menu-link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="">
+              <ul class="burger-social-links">
+                <li class="burger-social-icon-items">
+                  <a href="" target="_blank" class="team-dream-links">
+                    <svg class="team-dream-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="burger-social-icon-items">
+                  <a href="" target="_blank" class="team-dream-links">
+                    <svg class="team-dream-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="burger-social-icon-items">
+                  <a href="" target="_blank" class="team-dream-links">
+                    <svg class="team-dream-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="burger-social-icon-items">
+                  <a href="" target="_blank" class="team-dream-links">
+                    <svg class="team-dream-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </form>
       </div>
     </div>
