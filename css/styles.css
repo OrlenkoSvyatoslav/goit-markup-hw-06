@@ -72,7 +72,8 @@ body {
 }
 
 /* ============== HEADER MOBILE STYLES ============== */
-.menu {
+.menu,
+.contacts {
   display: none;
 }
 
@@ -80,10 +81,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.contacts {
-  display: none;
 }
 
 .logotype {
@@ -111,8 +108,11 @@ body {
   padding: 0;
   line-height: 0;
 }
+/* ============== /HEADER MOBILE STYLES ============== */
 
-@media screen and (max-width: 767px) {
+/* ===============  MAX MOBILE  ================== */
+@media screen and (max-width: 768px) {
+  /* ============== HEADER max MOBILE STYLES ============== */
   /* ====== BURGER FORM ====== */
   .mobile-burger-menu {
     position: fixed;
@@ -124,6 +124,7 @@ body {
     background-color: #efd2d2;
     transform: translateX(100%);
     transition: transform 250ms linear;
+    display: flex;
   }
 
   /* .mobile-burger-menu.is-open {
@@ -132,7 +133,6 @@ body {
 
   .mobile-burger-conteiner {
     position: fixed;
-    display: flex;
     flex-direction: column;
     width: 100%;
     padding: 72px 24px 40px 16px;
@@ -152,7 +152,7 @@ body {
   }
 
   .contacts-burger-list {
-    margin-bottom: auto;
+    margin-top: auto;
   }
 
   .contacts-burger-list-item:not(:last-child) {
@@ -199,10 +199,6 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .contacts-burger-list {
-    margin-top: auto;
-  }
-
   .menu-link {
     color: #2e2f42;
     font-weight: 400;
@@ -212,11 +208,57 @@ body {
   }
 
   /* ====== /BURGER FORM ====== */
-  /* ============== /HEADER MOBILE STYLES ============== */
-  .benefits-icon-list {
-    display: none;
+  /* ============== /HEADER max MOBILE STYLES ============== */
+
+  /* ============== Team Dream max Mobile STYLES ============== */
+  .team-dream-item {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
   }
+  /* ============== /Team Dream max Mobile STYLES ============== */
+  /* ===============  /MAX MOBILE  ================== */
 }
+/* ===============  MAX TABLET  ================== */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  /* ============== Benefits max Tablet STYLES ============== */
+  .benefits-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+  }
+
+  .benefits-item-text {
+    width: 356px;
+  }
+
+  .benefits-item-list {
+    width: calc((100%-24px) / 2);
+  }
+  /* ============== Benefits max Tablet STYLES ============== */
+  /* ============== Team Dream max Tablet STYLES ============== */
+  .team-dream {
+    padding: 96px 0;
+  }
+
+  .team-dream-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 64px;
+    justify-content: center;
+  }
+
+  .team-dream-item-list {
+    width: calc((100%-24px) / 2);
+  }
+  /* ============== Team Dream max Tablet STYLES ============== */
+}
+/* ===============  MAX TABLET  ================== */
 
 /* ============== Hero MOBILE STYLES ============== */
 .hero {
@@ -287,14 +329,128 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ============== /Hero MOBILE STYLES ============== */
+.order-btn:hover,
+.order-btn:focus {
+  background-color: #404bbf;
+}
 
+/* ============== /Hero MOBILE STYLES ============== */
+/* ============== Benefits MOBILE STYLES ============== */
+.benefits-icon-list {
+  display: none;
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 72px;
+}
+
+.benefits {
+  padding: 96px 0;
+}
+
+.benefits-list-header {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.benefits-item-text {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ============== /Benefits MOBILE STYLES ============== */
+/* ============== Team Dream MOBILE STYLES ============== */
+.team-dream {
+  background-color: #f4f4fd;
+}
+
+.team-dream {
+  padding: 96px 0;
+}
+
+.team-list-item {
+  padding: 32px 0;
+  background-color: #ffffff;
+}
+
+.team-dream-item-list {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-dream-title {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.team-dream-name {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.team-dream-text {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.social-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.team-dream-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-dream-links:hover,
+.team-dream-links:focus {
+  background-color: #404bbf;
+}
+
+.team-dream-icon {
+  fill: #f4f4fd;
+}
+/* ============== /Team Dream MOBILE STYLES ============== */
+
+/* ============== HEADER tablet STYLES ============== */
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 
-  /* ============== HEADER tablet STYLES ============== */
   .menu {
     display: flex;
     column-gap: 40px;
@@ -377,8 +533,8 @@ body {
   .header-link {
     padding: 24px 0;
   }
-
   /* ============== /HEADER tablet STYLES ============== */
+
   /* ============== HEro tablet STYLES ============== */
   .hero {
     padding: 112px 0;
@@ -398,9 +554,52 @@ body {
     gap: 40px;
   }
   /* ============== /HEADER DECKTOP STYLES ============== */
-  /* ============== HEro DECKTOP STYLES ============== */
+  /* =============== HEro DECKTOP STYLES ================ */
   .hero {
     padding: 188px 0;
   }
-  /* ============== /HEro DECKTOP STYLES ============== */
+  /* =============== /HEro DECKTOP STYLES =============== */
+  /* =============== Benefits DECKTOP STYLES =============== */
+  .benefits {
+    padding: 120px 0;
+  }
+
+  .benefits-item {
+    display: flex;
+    gap: 24px;
+  }
+
+  .benefits-item-list {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .benefits-icon-list {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 8px;
+  }
+
+  .benefits-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 100px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+  /* =============== /Benefits DECKTOP STYLES =============== */
+  /* ============== Team Dream DECKTOP STYLES ============== */
+  .team-dream {
+    padding: 120px 0;
+  }
+
+  .team-dream-item {
+    display: flex;
+    gap: 24px;
+  }
+
+  /* ============== Team Dream DECKTOP STYLES ============== */
 }
