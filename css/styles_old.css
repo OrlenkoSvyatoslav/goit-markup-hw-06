@@ -429,7 +429,7 @@ body {
 
 /* ============== FOOTER ============== */
 
-.team-dream-footer {
+.footer {
   background-color: #2e2f42;
   padding: 100px 0;
 }
@@ -536,7 +536,6 @@ body {
 
 input::placeholder {
   color: #ffffff;
-  font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
   line-height: 2;
