@@ -333,7 +333,16 @@
               <div class="hidden-inform">
                 <img
                   class="portfolio-img"
-                  src="./images/app.jpg"
+                  srcset="
+                    ./images/BankingApp-Mobile.jpg     288w,
+                    ./images/BankingApp-Tablet.jpg     356w,
+                    ./images/BankingApp-Desctop.jpg    360w,
+                    ./images/BankingApp-Mobile@2x.jpg  576w,
+                    ./images/BankingApp-Tablet@2x.jpg  712w,
+                    ./images/BankingApp-Desctop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/BankingApp-Desctop.jpg"
                   alt="app"
                   width="360"
                 />
@@ -353,7 +362,16 @@
               <div class="hidden-inform">
                 <img
                   class="portfolio-img"
-                  src="./images/phone.jpg"
+                  srcset="
+                    ./images/Cashless-Payment-Mobile.jpg     288w,
+                    ./images/Cashless-Payment-Tablet.jpg     356w,
+                    ./images/Cashless-Payment-Desctop.jpg    360w,
+                    ./images/Cashless-Payment-Mobile@2x.jpg  576w,
+                    ./images/Cashless-Payment-Tablet@2x.jpg  712w,
+                    ./images/Cashless-Payment-Desctop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/Cashless-Payment-Desctop.jpg"
                   alt="marketing"
                   width="360"
                 />
@@ -373,7 +391,16 @@
               <div class="hidden-inform">
                 <img
                   class="portfolio-img"
-                  src="./images/notebook.jpg"
+                  srcset="
+                    ./images/Meditation-App-Mobile.jpg     288w,
+                    ./images/Meditation-App-Tablet.jpg     356w,
+                    ./images/Meditation-App-Desctop.jpg    360w,
+                    ./images/Meditation-App-Mobile@2x.jpg  576w,
+                    ./images/Meditation-App-Tablet@2x.jpg  712w,
+                    ./images/Meditation-App-Desctop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/Meditation-App-Desctop.jpg"
                   alt="app"
                   width="360"
                 />
@@ -393,7 +420,16 @@
               <div class="hidden-inform">
                 <img
                   class="portfolio-img"
-                  src="./images/wheel.jpg"
+                  srcset="
+                    ./images/Taxi-Service-Mobile.jpg     288w,
+                    ./images/Taxi-Service-Tablet.jpg     356w,
+                    ./images/Taxi-Service-Desctop.jpg    360w,
+                    ./images/Taxi-Service-Mobile@2x.jpg  576w,
+                    ./images/Taxi-Service-Tablet@2x.jpg  712w,
+                    ./images/Taxi-Service-Desctop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/Taxi-Service-Desctop.jpg"
                   alt="marketing"
                   width="360"
                 />
@@ -413,7 +449,16 @@
               <div class="hidden-inform">
                 <img
                   class="portfolio-img"
-                  src="./images/moon.jpg"
+                  srcset="
+                    ./images/Screen-Illustrations-Mobile.jpg     288w,
+                    ./images/Screen-Illustrations-Tablet.jpg     356w,
+                    ./images/Screen-Illustrations-Desctop.jpg    360w,
+                    ./images/Screen-Illustrations-Mobile@2x.jpg  576w,
+                    ./images/Screen-Illustrations-Tablet@2x.jpg  712w,
+                    ./images/Screen-Illustrations-Desctop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/Screen-Illustrations-Desctop.jpg"
                   alt="design"
                   width="360"
                 />
@@ -433,7 +478,16 @@
               <div class="hidden-inform">
                 <img
                   class="portfolio-img"
-                  src="./images/girl.jpg"
+                  srcset="
+                    ./images/Online-Courses-Mobile.jpg     288w,
+                    ./images/Online-Courses-Tablet.jpg     356w,
+                    ./images/Online-Courses-Desctop.jpg    360w,
+                    ./images/Online-Courses-Mobile@2x.jpg  576w,
+                    ./images/Online-Courses-Tablet@2x.jpg  712w,
+                    ./images/Online-Courses-Desctop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/Online-Courses-Desctop.jpg"
                   alt="marketing"
                   width="360"
                 />
@@ -604,78 +658,74 @@
     <!-- MOBILE MENU BURGER -->
 
     <div class="mobile-burger-menu is-open-burger">
-      <div class="container mobile-burger-conteiner">
-        <div class="mobile-close-button">
-          <button class="close-burger" type="button">
-            <svg class="close-burger-btn-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-close-form"></use>
-            </svg>
-          </button>
-          <nav class="burger-nav">
-            <ul class="burger-list">
-              <li class="menu-burger-list-item">
-                <a class="burger-links active-burger" href="">Contacts</a>
-              </li>
-              <li class="menu-burger-list-item">
-                <a class="burger-links" href="">Portfolio</a>
-              </li>
-              <li class="menu-burger-list-item">
-                <a class="burger-links" href="">Studio</a>
-              </li>
-            </ul>
-          </nav>
+      <button class="close-burger" type="button">
+        <svg class="close-burger-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-form"></use>
+        </svg>
+      </button>
+      <nav class="burger-nav">
+        <ul class="burger-list">
+          <li class="menu-burger-list-item">
+            <a class="burger-links active-burger" href="">Studio</a>
+          </li>
+          <li class="menu-burger-list-item">
+            <a class="burger-links" href="">Portfolio</a>
+          </li>
+          <li class="menu-burger-list-item">
+            <a class="burger-links" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address id="Contacts" class="contacts-burger">
+        <ul class="contacts-burger-list">
+          <li class="contacts-burger-list-item">
+            <a
+              class="contacts-burger-item-link menu-link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-burger-list-item">
+            <a
+              class="contacts-burger-item-link menu-link"
+              href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
 
-          <address id="Contacts" class="contacts-burger">
-            <ul class="contacts-burger-list">
-              <li class="contacts-burger-list-item">
-                <a
-                  class="contacts-burger-item-link menu-link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contacts-burger-list-item">
-                <a
-                  class="contacts-burger-item-link menu-link"
-                  href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
-          <div class="burger-icon">
-            <ul class="burger-social-links">
-              <li class="burger-social-icon-items">
-                <a href="" target="_blank" class="team-dream-links">
-                  <svg class="team-dream-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-instagram-2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="burger-social-icon-items">
-                <a href="" target="_blank" class="team-dream-links">
-                  <svg class="team-dream-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-twitter-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="burger-social-icon-items">
-                <a href="" target="_blank" class="team-dream-links">
-                  <svg class="team-dream-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-facebook-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="burger-social-icon-items">
-                <a href="" target="_blank" class="team-dream-links">
-                  <svg class="team-dream-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="burger-icon">
+        <ul class="burger-social-links">
+          <li class="burger-social-icon-items">
+            <a href="" target="_blank" class="team-dream-links">
+              <svg class="team-dream-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-social-icon-items">
+            <a href="" target="_blank" class="team-dream-links">
+              <svg class="team-dream-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-social-icon-items">
+            <a href="" target="_blank" class="team-dream-links">
+              <svg class="team-dream-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-social-icon-items">
+            <a href="" target="_blank" class="team-dream-links">
+              <svg class="team-dream-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

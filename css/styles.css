@@ -117,29 +117,16 @@ body {
   background-color: #2e2f42;
 }
 
-.background-img {
-  max-width: 1440px;
-  margin: 0 auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
-}
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .background-img {
     max-width: 1440px;
     margin: 0 auto;
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: linear-gradient(
-        to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
@@ -148,15 +135,16 @@ body {
 }
 
 .main-title {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   color: #ffffff;
   text-align: center;
-  letter-spacing: 1.12px;
-  max-width: 496px;
+  letter-spacing: 0.02em;
+  max-width: 288px;
   margin: 0 auto;
   margin-bottom: 72px;
+  font-style: normal;
 }
 
 .order-btn {
@@ -206,9 +194,10 @@ body {
 
 .benefits-list-header {
   color: #2e2f42;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
@@ -230,7 +219,7 @@ body {
 }
 
 .team-list-item {
-  padding: 32px 0;
+  padding-bottom: 32px;
   background-color: #ffffff;
 }
 
@@ -712,6 +701,12 @@ input::placeholder {
 /* ============== /BACKDROP MOBILE STYLES ============== */
 /* ============== BACKDROP TABLET AND DESCTOP STYLES ============== */
 @media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+
   .form-modal {
     width: 408px;
     min-height: 584px;
@@ -719,6 +714,19 @@ input::placeholder {
 
   .form-title {
     width: 360px;
+  }
+
+  .background-img {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
   }
 }
 /* ============== /BACKDROP TABLET AND DESCTOP STYLES ============== */
@@ -728,6 +736,7 @@ input::placeholder {
   /* ====== BURGER FORM MOBILE ====== */
   .mobile-burger-menu {
     position: fixed;
+    padding: 72px 24px 40px 16px;
     top: 0;
     left: 0;
     width: 100%;
@@ -737,17 +746,15 @@ input::placeholder {
     transform: translateX(100%);
     transition: transform 250ms linear;
     display: flex;
+    flex-direction: column;
   }
 
   .mobile-burger-menu.is-open-burger {
     transform: translateX(0%);
   }
 
-  .mobile-burger-conteiner {
-    position: fixed;
-    flex-direction: column;
-    width: 100%;
-    padding: 72px 24px 40px 16px;
+  .burger-nav {
+    margin-bottom: auto;
   }
 
   .burger-links {
@@ -759,12 +766,8 @@ input::placeholder {
     letter-spacing: 0.02em;
   }
 
-  .menu-burger-list-item {
+  .menu-burger-list-item:not(:last-child) {
     margin-bottom: 40px;
-  }
-
-  .contacts-burger-list {
-    margin-top: auto;
   }
 
   .contacts-burger-list-item:not(:last-child) {
@@ -898,6 +901,9 @@ input::placeholder {
 /* ===============  < MAX TABLET MAX > ================== */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   /* ============== Benefits < MAX > TABLET STYLES ============== */
+  .benefits-list-header {
+    text-align: start;
+  }
   .benefits-item {
     display: flex;
     flex-direction: row;
@@ -996,7 +1002,6 @@ input::placeholder {
     margin-right: 106px;
   }
   .page-header {
-    padding: 24px 0;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -1016,8 +1021,10 @@ input::placeholder {
     display: inline;
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     font-style: normal;
+    font-size: 12px;
+    line-height: 1.16;
   }
 
   .contacts-item-link {
@@ -1114,6 +1121,13 @@ input::placeholder {
   /* =============== Benefits DECKTOP STYLES =============== */
   .benefits {
     padding: 120px 0;
+  }
+
+  .benefits-list-header {
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
   }
 
   .benefits-item {
